@@ -69,7 +69,7 @@ Bug fixes, docs, and enhancements welcome! Please let us know <a href="mailto:su
  اگر در استفاده از کیت های سرویس کاوه نگار مشکلی یا پیشنهادی  داشتید ما را با یک Pull Request  یا  ارسال ایمیل به support@kavenegar.com  خوشحال کنید.
  
 ##
-<a class="navbar-brand" href="/"> 
+<a class="navbar-brand" href="http://kavenegar.com/"> 
                 <img alt="kavenegar" height="48" src="http://kavenegar.com/images/logo.svg" style="margin-top: -4px;opacity: 1;background: transparent;border-radius: 100%;padding-top: 1px;padding-left: 1px;width: auto;height: 50px;" class="">
              </a>
 </div>
