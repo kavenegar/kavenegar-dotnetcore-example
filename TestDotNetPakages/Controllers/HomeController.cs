@@ -15,22 +15,21 @@ namespace TestDotNetPakages.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //خط ارسال کننده
+            //senders number
             string[] sender = { "10008663", "10008663", "10008663", "10008663", "10008663" };
             
-            //لیست شماره گیرندگان پیام
+            //receptors numbers
             string[] receptor = { "09112345678", "09112345678", "", "09112345678", "09012345678" };
 
-            //لیست پیام های ارسالی
+            //list of messages
             string[] message = { "تست وب سرویس کاوه نگار", "تست وب سرویس کاوه نگار", "تست وب سرویس کاوه نگار", "تست وب سرویس کاوه نگار", "تست وب سرویس کاوه نگار" };
 
-            //شناسه پیام هایی که مثلا در دیتابیس لوکال قرار دارند
-
+            //localids that exist in local database
             string[] localIDs = { new Random().Next(0, 2454).ToString(), new Random().Next(0, 12544).ToString(),
             new Random().Next(0, 45645).ToString(),new Random().Next(0, 2000000).ToString(),
             new Random().Next(0, 123123456).ToString(),};
 
-            //Your Api Key شناسه شما در پنل کاوه نگار
+            //Your Api Key in kavenegar 
             KavenegarApi kavenegar = new KavenegarApi("Your Api Key");
 
             SendResult result = null;
@@ -110,7 +109,11 @@ namespace TestDotNetPakages.Controllers
             #endregion
 
             #region VerifyLookupAsync
+            
+            //verify is template neme, you can create template from here https://panel.kavenegar.com/Client/Verification/Create
             result = await kavenegar.VerifyLookup(receptor[0], "123", "verify");
+            
+            //rate is template neme, you can create template from here https://panel.kavenegar.com/Client/Verification/Create
             result = await kavenegar.VerifyLookup(receptor[0], "123", null, null, null, "token20", "rate", VerifyLookupType.Sms);
             #endregion
 
