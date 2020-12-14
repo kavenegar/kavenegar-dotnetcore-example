@@ -1,4 +1,6 @@
 using System;
+using Kavenegar.Core.Utils;
+
 namespace Models
 {
  public class AccountInfoResult
@@ -7,7 +9,7 @@ namespace Models
 	public long Expiredate { get; set; }
 	public DateTime GregorianExpiredate
 	{
-	 get { return Utils.DateHelper.UnixTimestampToDateTime(Expiredate); }
+	 get { return DateHelper.UnixTimestampToDateTime(Expiredate); }
 	}
 	public string Type { get; set; }
  }

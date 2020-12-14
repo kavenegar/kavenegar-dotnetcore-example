@@ -1,4 +1,6 @@
 using System;
+using Kavenegar.Core.Utils;
+
 namespace Models
 {
  public class ReceiveResult
@@ -9,7 +11,7 @@ namespace Models
 	{
 	 get
 	 {
-		return Utils.DateHelper.UnixTimestampToDateTime(Date);
+		return DateHelper.UnixTimestampToDateTime(Date);
 	 }
 	}
 	

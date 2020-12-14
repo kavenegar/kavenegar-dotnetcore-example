@@ -1,5 +1,5 @@
 using System;
-using Kavenegar.Utils;
+using Kavenegar.Core.Utils;
 
 namespace Models
 {

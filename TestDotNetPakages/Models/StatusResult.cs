@@ -1,4 +1,4 @@
-using Kavenegar.Models.Enums;
+using Kavenegar.Core.Models.Enums;
 namespace Models
 {
  public class StatusResult
